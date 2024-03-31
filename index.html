@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heal U</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon Bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body style="background-color: #720846; margin-top: 100px;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg rounded-bottom-4"
+        style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/healu.png" width="100" alt="Heal u"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto gap-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" style="color: #720846;" href="#">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #720846;" href="#">Edumind</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #720846;" href="#">Empatalk</a>
+                </li>
+                <li class="nav-item dropdown" style="margin-right: 120px;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="img/profil.png" alt="Profil" width="150" class="rounded-circle img-thumbnail" style="background: lightgray 50% / cover no-repeat, var(--bg_profil, #CFCFCF);
+                                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="39"
+                                    height="39" viewBox="0 0 39 39" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13 11.375C13 9.65109 13.6848 7.99779 14.9038 6.77881C16.1228 5.55982 17.7761 4.875 19.5 4.875C21.2239 4.875 22.8772 5.55982 24.0962 6.77881C25.3152 7.99779 26 9.65109 26 11.375C26 13.0989 25.3152 14.7522 24.0962 15.9712C22.8772 17.1902 21.2239 17.875 19.5 17.875C17.7761 17.875 16.1228 17.1902 14.9038 15.9712C13.6848 14.7522 13 13.0989 13 11.375ZM13 21.125C10.8451 21.125 8.77849 21.981 7.25476 23.5048C5.73102 25.0285 4.875 27.0951 4.875 29.25C4.875 30.5429 5.38861 31.7829 6.30285 32.6971C7.21709 33.6114 8.45707 34.125 9.75 34.125H29.25C30.5429 34.125 31.7829 33.6114 32.6971 32.6971C33.6114 31.7829 34.125 30.5429 34.125 29.25C34.125 27.0951 33.269 25.0285 31.7452 23.5048C30.2215 21.981 28.1549 21.125 26 21.125H13Z"
+                                        fill="#720846" />
+                                </svg>Profil</a></li>
+                        <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="39"
+                                    height="39" viewBox="0 0 39 39" fill="none">
+                                    <path
+                                        d="M15 0C6.83654 0 0 5.86154 0 13.2692C0 16.7654 1.56808 19.9015 4.03846 22.2473C3.73748 23.032 3.31117 23.7626 2.77615 24.4108C2.06639 25.2718 1.28221 26.0688 0.432692 26.7923C0.246365 26.9418 0.111027 27.1454 0.0453565 27.3751C-0.0203142 27.6048 -0.0130803 27.8492 0.0660598 28.0746C0.1452 28.3 0.292345 28.4952 0.487187 28.6334C0.68203 28.7716 0.914965 28.846 1.15385 28.8462C3.70962 28.8462 5.54769 28.8173 7.21154 28.3777C8.7 27.9831 9.97962 27.1569 11.2858 25.9973C12.4742 26.2823 13.7008 26.5385 15 26.5385C23.1635 26.5385 30 20.6769 30 13.2692C30 5.86154 23.1635 0 15 0ZM15 2.30769C22.0673 2.30769 27.6923 7.29231 27.6923 13.2692C27.6923 19.2462 22.0673 24.2308 15 24.2308C13.7435 24.2308 12.4385 24.0138 11.25 23.6896C11.0599 23.6418 10.8609 23.6432 10.6715 23.6937C10.4821 23.7442 10.3088 23.842 10.1677 23.9781C8.86962 25.2231 7.91308 25.8035 6.63462 26.1415C6.04615 26.2973 4.91077 26.2604 4.11 26.3227C4.27154 26.1404 4.42269 26.0435 4.57962 25.8531C5.48654 24.7454 6.31385 23.5742 6.56308 22.2473C6.59741 22.0481 6.57881 21.8434 6.50915 21.6537C6.43949 21.4639 6.32121 21.2958 6.16615 21.1662C3.74885 19.17 2.30769 16.3719 2.30769 13.2692C2.30769 7.29231 7.93269 2.30769 15 2.30769ZM12.8008 6.81461C12.5977 6.8602 12.4107 6.95987 12.2596 7.10308L10.5288 8.72654L12.0796 10.4204L13.4492 9.12231H16.2254L17.3077 10.35V12.045L14.3504 14.0273C14.1923 14.135 14.0635 14.2802 13.9755 14.45C13.8874 14.6198 13.843 14.8088 13.8462 15V17.3077H16.1538V15.6485L19.1112 13.6662C19.2694 13.5584 19.3983 13.413 19.4864 13.243C19.5744 13.073 19.6187 12.8837 19.6154 12.6923V9.91615C19.6139 9.63728 19.5114 9.36839 19.3269 9.15923L17.5962 7.21154C17.4885 7.08762 17.3555 6.98811 17.2063 6.91966C17.0571 6.85121 16.895 6.8154 16.7308 6.81461H13.0523C12.9687 6.80545 12.8844 6.80545 12.8008 6.81461ZM13.8462 18.4615V20.7692H16.1538V18.4615H13.8462Z"
+                                        fill="#720846" />
+                                </svg>Pusat Bantuan</a></li>
+                        <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="39"
+                                    height="39" viewBox="0 0 39 39" fill="none">
+                                    <path
+                                        d="M29.25 3.25H9.75C9.31902 3.25 8.9057 3.4212 8.60095 3.72595C8.29621 4.0307 8.125 4.44402 8.125 4.875V19.5L16.25 13V17.875H26V21.125H16.25V26L8.125 19.5V34.125C8.125 34.556 8.29621 34.9693 8.60095 35.274C8.9057 35.5788 9.31902 35.75 9.75 35.75H29.25C29.681 35.75 30.0943 35.5788 30.399 35.274C30.7038 34.9693 30.875 34.556 30.875 34.125V4.875C30.875 4.44402 30.7038 4.0307 30.399 3.72595C30.0943 3.4212 29.681 3.25 29.25 3.25Z"
+                                        fill="#720846" />
+                                </svg>Keluar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <section class="jumbotron text-center m-5 p-3">
+        <div class="row justify-content-center fs-5 text-center">
+            <div class="col-md-4 ">
+                <img src="img/pict1.png" alt="gambar_kepala" width="500" class="img-fluid">
+            </div>
+            <div class="col-md text-start text-center align-content-center" style="color: white;">
+                <h1><b>WE'RE HERE FOR YOU</b></h1>
+                <p style="font-size: 16px;">Saatnya Membangun Kesehatan Mental yang Kuat Bersama, Kita Peduli, Kita
+                    Dukung, Kita Sembuh.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="edumind">
+        <div class="container-fluid rounded-4 p-3" style="background-color: white;">
+            <div class="row text-center mb-3">
+                <div class="col" style="color: #720846; font-size: 20px;">
+                    <p>Edukasi dan Informasi <br>
+                        Mengenal lebih dalam tentang kesehatan mental di Edumind</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-start">
+                <div class="col-md-3 mb-3">
+                    <div class="card" style="background-color: #720846; color: white;">
+                        <img src="img/edumind/edu1.png" class="card-img-top" alt="project1">
+                        <div class="card-body">
+                            <b class="card-text" style="font-size: 20px;">Mengenal Apa Itu Kesehatan
+                                Mental</b>
+                            <p style="font-size: 16px; font-weight: 500;">Kesehatan jiwa atau sebutan lainnya kesehatan
+                                mental adalah
+                                kesehatan yang berkaitan
+                                dengan kondisi emosi, kejiwaan, dan psikis seseorang.
+                                Perlu kamu ketahui bahwa peristiwa dalam hidup yang berdampak ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card" style="background-color: #720846; color: white;">
+                        <img src="img/edumind/edu2.png" class="card-img-top" alt="project2">
+                        <div class="card-body">
+                            <b class="card-text" style="font-size: 20px;">Hubungan antara Pola Makan dan Kesehatan
+                                Mental</b>
+                            <p style="font-size: 16px; font-weight: 500;">Semua orang tahu bahwa nutrisi berperan
+                                penting dalam kesehatan fisik kita. Namun, penelitian juga menunjukkan bahwa nutrisi
+                                secara langsung mempengaruhi kesehatan mental dan emosional lho. dan juga pengaruh ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card" style="background-color: #720846; color: white;">
+                        <img src="img/edumind/edu3.png" class="card-img-top" alt="project2">
+                        <div class="card-body">
+                            <b class="card-text" style="font-size: 20px;">Teknik Manajemen Waktu untuk Mengurangi
+                                Stres</b>
+                            <p style="font-size: 16px; font-weight: 500;">Kesehatan jiwa atau sebutan lainnya kesehatan
+                                Sebagai profesional industri, kita sering kali harus menghadapi banyak tugas dan
+                                tanggung jawab, baik di tempat kerja maupun dalam kehidupan pribadi. Hal ini dapat
+                                menyebabkan stres, kelelahan, ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card" style="background-color: #720846; color: white;">
+                        <img src="img/edumind/edu4.png" class="card-img-top" alt="project2">
+                        <div class="card-body">
+                            <b class="card-text" style="font-size: 20px;">Teknik Relaksasi Sederhana untuk Mengatasi
+                                Stres</b>
+                            <p style="font-size: 16px; font-weight: 500;">Kesehatan jiwa atau sebutan lainnya kesehatan
+                                Relaksasi bisa menjadi salah satu cara untuk mengatasi stres. Metode ini dapat dengan
+                                mudah Anda lakukan di rumah dan tidak membutuhkan biaya mahal serta dapat menambah ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center p-3">
+                <div class="col" style="font-size: 20px;">
+                    <button type="button" class="btn"
+                        style="background-color: #a9a9a9; color: #720846; box-shadow: 3px 4px 3px 0px rgba(0, 0, 0, 0.25);">Lihat
+                        Selengkapnya ></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EmpaTalk -->
+    <section id="empatalk">
+        <div class="container-fluid rounded-4 p-3">
+            <div class="row text-center mb-3">
+                <div class="col" style="color: white; font-size: 20px;">
+                    <p>Dapatkan dan berikan dukungan dalam komunitas <br> secara anonim atau dengan identitasmu di
+                        EmpaTalk</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-start">
+                <div class="col-md-3 mb-3">
+                    <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(153, 153, 153, 0.62) 100%);
+                    color: white;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/profil.png" alt="user" width="50"
+                                        class="rounded-circle img-thumbnail">
+                                </div>
+                                <div class="col text-start align-content-center">
+                                    <b>Lebah Anonym</b>
+                                </div>
+                            </div>
+                            <br>
+                            <p style="font-size: 16px; font-weight: 500;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nisi excepturi sint suscipit quas nulla tempora hic animi accusamus
+                                laudantium, id officiis libero doloribus possimus debitis, minima amet nostrum commodi
+                                rerum?</p>
+                            <button type="button" class="btn btn-light rounded-5 text-center" style="font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500; color: #720846;"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path
+                                        d="M15.9998 2.66663C14.2489 2.66663 12.515 3.0115 10.8974 3.68157C9.2797 4.35163 7.80984 5.33375 6.57173 6.57187C4.07125 9.07235 2.66649 12.4637 2.66649 16C2.65483 19.0788 3.72088 22.0647 5.67982 24.44L3.01315 27.1066C2.82814 27.2941 2.70282 27.5322 2.65298 27.7909C2.60315 28.0495 2.63105 28.3171 2.73315 28.56C2.8439 28.7999 3.02343 29.0015 3.24895 29.1391C3.47447 29.2768 3.73582 29.3444 3.99982 29.3333H15.9998C19.536 29.3333 22.9274 27.9285 25.4279 25.428C27.9284 22.9276 29.3331 19.5362 29.3331 16C29.3331 12.4637 27.9284 9.07235 25.4279 6.57187C22.9274 4.07138 19.536 2.66663 15.9998 2.66663ZM15.9998 26.6666H7.21315L8.45315 25.4266C8.70149 25.1768 8.84088 24.8389 8.84088 24.4866C8.84088 24.1344 8.70149 23.7964 8.45315 23.5466C6.70727 21.8027 5.62005 19.5073 5.37674 17.0517C5.13343 14.596 5.74908 12.132 7.11879 10.0793C8.4885 8.02668 10.5275 6.51244 12.8885 5.79459C15.2495 5.07674 17.7863 5.1997 20.0668 6.14251C22.3472 7.08532 24.2303 8.78966 25.3951 10.9651C26.5598 13.1406 26.9343 15.6527 26.4547 18.0733C25.975 20.4939 24.6709 22.6734 22.7645 24.2403C20.8582 25.8072 18.4675 26.6647 15.9998 26.6666Z"
+                                        fill="#720846" />
+                                </svg>1234</button>
+                            <button type="button" class="btn btn-light rounded-5" style="font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500; color: #720846;"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <mask id="mask0_41_1704" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                        x="1" y="3" width="30" height="26">
+                                        <path
+                                            d="M10.0001 4.66663C5.95008 4.66663 2.66675 7.94996 2.66675 12C2.66675 19.3333 11.3334 26 16.0001 27.5506C20.6667 26 29.3334 19.3333 29.3334 12C29.3334 7.94996 26.0501 4.66663 22.0001 4.66663C19.5201 4.66663 17.3267 5.89796 16.0001 7.78263C15.3239 6.81943 14.4255 6.03335 13.3811 5.49095C12.3367 4.94855 11.1769 4.6658 10.0001 4.66663Z"
+                                            fill="white" stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 16H20M16 12V20" stroke="black" stroke-width="1.66667"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </mask>
+                                    <g mask="url(#mask0_41_1704)">
+                                        <path d="M0 0H32V32H0V0Z" fill="#720846" />
+                                    </g>
+                                </svg>12345</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(153, 153, 153, 0.62) 100%);
+                    color: white;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/profil.png" alt="user" width="50"
+                                        class="rounded-circle img-thumbnail">
+                                </div>
+                                <div class="col text-start align-content-center">
+                                    <b>Lebah Anonym</b>
+                                </div>
+                            </div>
+                            <br>
+                            <p style="font-size: 16px; font-weight: 500;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nisi excepturi sint suscipit quas nulla tempora hic animi accusamus
+                                laudantium, id officiis libero doloribus possimus debitis, minima amet nostrum commodi
+                                rerum?</p>
+                            <button type="button" class="btn btn-light rounded-5 text-center" style="font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500; color: #720846;"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path
+                                        d="M15.9998 2.66663C14.2489 2.66663 12.515 3.0115 10.8974 3.68157C9.2797 4.35163 7.80984 5.33375 6.57173 6.57187C4.07125 9.07235 2.66649 12.4637 2.66649 16C2.65483 19.0788 3.72088 22.0647 5.67982 24.44L3.01315 27.1066C2.82814 27.2941 2.70282 27.5322 2.65298 27.7909C2.60315 28.0495 2.63105 28.3171 2.73315 28.56C2.8439 28.7999 3.02343 29.0015 3.24895 29.1391C3.47447 29.2768 3.73582 29.3444 3.99982 29.3333H15.9998C19.536 29.3333 22.9274 27.9285 25.4279 25.428C27.9284 22.9276 29.3331 19.5362 29.3331 16C29.3331 12.4637 27.9284 9.07235 25.4279 6.57187C22.9274 4.07138 19.536 2.66663 15.9998 2.66663ZM15.9998 26.6666H7.21315L8.45315 25.4266C8.70149 25.1768 8.84088 24.8389 8.84088 24.4866C8.84088 24.1344 8.70149 23.7964 8.45315 23.5466C6.70727 21.8027 5.62005 19.5073 5.37674 17.0517C5.13343 14.596 5.74908 12.132 7.11879 10.0793C8.4885 8.02668 10.5275 6.51244 12.8885 5.79459C15.2495 5.07674 17.7863 5.1997 20.0668 6.14251C22.3472 7.08532 24.2303 8.78966 25.3951 10.9651C26.5598 13.1406 26.9343 15.6527 26.4547 18.0733C25.975 20.4939 24.6709 22.6734 22.7645 24.2403C20.8582 25.8072 18.4675 26.6647 15.9998 26.6666Z"
+                                        fill="#720846" />
+                                </svg>1234</button>
+                            <button type="button" class="btn btn-light rounded-5" style="font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500; color: #720846;"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <mask id="mask0_41_1704" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                        x="1" y="3" width="30" height="26">
+                                        <path
+                                            d="M10.0001 4.66663C5.95008 4.66663 2.66675 7.94996 2.66675 12C2.66675 19.3333 11.3334 26 16.0001 27.5506C20.6667 26 29.3334 19.3333 29.3334 12C29.3334 7.94996 26.0501 4.66663 22.0001 4.66663C19.5201 4.66663 17.3267 5.89796 16.0001 7.78263C15.3239 6.81943 14.4255 6.03335 13.3811 5.49095C12.3367 4.94855 11.1769 4.6658 10.0001 4.66663Z"
+                                            fill="white" stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 16H20M16 12V20" stroke="black" stroke-width="1.66667"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </mask>
+                                    <g mask="url(#mask0_41_1704)">
+                                        <path d="M0 0H32V32H0V0Z" fill="#720846" />
+                                    </g>
+                                </svg>12345</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, rgba(153, 153, 153, 0.62) 100%);
+                    color: white;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/profil.png" alt="user" width="50"
+                                        class="rounded-circle img-thumbnail">
+                                </div>
+                                <div class="col text-start align-content-center">
+                                    <b>Lebah Anonym</b>
+                                </div>
+                            </div>
+                            <br>
+                            <p style="font-size: 16px; font-weight: 500;">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nisi excepturi sint suscipit quas nulla tempora hic animi accusamus
+                                laudantium, id officiis libero doloribus possimus debitis, minima amet nostrum commodi
+                                rerum?</p>
+                            <button type="button" class="btn btn-light rounded-5 text-center" style="font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500; color: #720846;"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <path
+                                        d="M15.9998 2.66663C14.2489 2.66663 12.515 3.0115 10.8974 3.68157C9.2797 4.35163 7.80984 5.33375 6.57173 6.57187C4.07125 9.07235 2.66649 12.4637 2.66649 16C2.65483 19.0788 3.72088 22.0647 5.67982 24.44L3.01315 27.1066C2.82814 27.2941 2.70282 27.5322 2.65298 27.7909C2.60315 28.0495 2.63105 28.3171 2.73315 28.56C2.8439 28.7999 3.02343 29.0015 3.24895 29.1391C3.47447 29.2768 3.73582 29.3444 3.99982 29.3333H15.9998C19.536 29.3333 22.9274 27.9285 25.4279 25.428C27.9284 22.9276 29.3331 19.5362 29.3331 16C29.3331 12.4637 27.9284 9.07235 25.4279 6.57187C22.9274 4.07138 19.536 2.66663 15.9998 2.66663ZM15.9998 26.6666H7.21315L8.45315 25.4266C8.70149 25.1768 8.84088 24.8389 8.84088 24.4866C8.84088 24.1344 8.70149 23.7964 8.45315 23.5466C6.70727 21.8027 5.62005 19.5073 5.37674 17.0517C5.13343 14.596 5.74908 12.132 7.11879 10.0793C8.4885 8.02668 10.5275 6.51244 12.8885 5.79459C15.2495 5.07674 17.7863 5.1997 20.0668 6.14251C22.3472 7.08532 24.2303 8.78966 25.3951 10.9651C26.5598 13.1406 26.9343 15.6527 26.4547 18.0733C25.975 20.4939 24.6709 22.6734 22.7645 24.2403C20.8582 25.8072 18.4675 26.6647 15.9998 26.6666Z"
+                                        fill="#720846" />
+                                </svg>1234</button>
+                            <button type="button" class="btn btn-light rounded-5" style="font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500; color: #720846;"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" viewBox="0 0 32 32" fill="none">
+                                    <mask id="mask0_41_1704" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                        x="1" y="3" width="30" height="26">
+                                        <path
+                                            d="M10.0001 4.66663C5.95008 4.66663 2.66675 7.94996 2.66675 12C2.66675 19.3333 11.3334 26 16.0001 27.5506C20.6667 26 29.3334 19.3333 29.3334 12C29.3334 7.94996 26.0501 4.66663 22.0001 4.66663C19.5201 4.66663 17.3267 5.89796 16.0001 7.78263C15.3239 6.81943 14.4255 6.03335 13.3811 5.49095C12.3367 4.94855 11.1769 4.6658 10.0001 4.66663Z"
+                                            fill="white" stroke="white" stroke-width="1.66667" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12 16H20M16 12V20" stroke="black" stroke-width="1.66667"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </mask>
+                                    <g mask="url(#mask0_41_1704)">
+                                        <path d="M0 0H32V32H0V0Z" fill="#720846" />
+                                    </g>
+                                </svg>12345</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center p-3">
+                <div class="col" style="font-size: 20px;">
+                    <button type="button" class="btn" style="background: linear-gradient(92deg, rgba(153, 153, 153, 0.20) 0.17%, rgba(255, 255, 255, 0.16) 99.83%), rgba(80, 23, 45, 0.80);
+                    color: white;
+                    ">Lihat
+                        Selengkapnya ></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tentang Kami -->
+    <section id="edumind" style="position: relative;">
+        <div class="container-fluid rounded-top-4 pt-5" style="background-color: white; color: #720846;">
+            <div class="row text-center">
+                <div class="col-md-6 justify-content-around p-3">
+                    <h1><b>Tentang Kami</b></h1>
+                </div>
+                <div class="col-md-5 text-start p-3">
+                    <p style="font-size: 16px;">Heal U adalah sebuah platform yang bertujuan untuk membangun kesadaran
+                        dan dukungan terhadap
+                        kesehatan mental. Di Heal U, kami percaya bahwa kesehatan mental adalah bagian integral dari
+                        kesejahteraan holistik kita. Kami menyediakan beragam sumber daya, mulai dari artikel, forum
+                        diskusi, hingga dukungan anonim, untuk membantu Anda memahami, mengelola, dan memperkuat
+                        kesehatan mental Anda. Bersama-sama, kami membentuk sebuah komunitas yang peduli, menginspirasi,
+                        dan saling mendukung dalam perjalanan menuju kesehatan mental yang lebih baik. Mari bergabung
+                        dengan kami di Heal U, di mana setiap langkah menuju kesembuhan dan kesejahteraan dihargai dan
+                        didukung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer style="background-color: white; padding-top: 3rem;">
+        <div class="row" style="width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    ">
+            <div class="col" style="flex-basis: 25%;
+            padding: 8px;">
+                <img src="img/healu.png" alt="logo" style="width: 200px;
+                margin-bottom: 35px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, mollitia.</p>
+            </div>
+            <div class="col" style="flex-basis: 25%;
+            padding: 8px;">
+                <h3>Office</h3>
+                <p><span>JL.Situ Indah,Cimanggis, Depok</p>
+                <p>Jawa Barat.</p>
+                <p class="email"><i class="fa-solid fa-envelope"></i> heal.u@gmail.com</p>
+                <h4><i class="fa-solid fa-square-phone"></i> +62 123-4567-8901</h4>
+            </div>
+            <div class="col" style="flex-basis: 25%;
+            padding: 8px;">
+                <h3>Contact US</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <p class="copyright text-center"> Heal.U © 2024 - All Right Reserved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <!-- Feather Icon -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

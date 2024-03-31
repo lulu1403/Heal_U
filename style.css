@@ -1,0 +1,75 @@
+
+.b {
+    font-size: 40;
+}
+
+.card {
+    border-radius: 20px
+}
+
+.jumbotron{
+    /* margin-top: 5000rem;
+    padding-top: 100rem; */
+    width: 1156;
+    height: 415;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0.41) 100%);
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.25);
+    ;
+}
+.input-group {
+    position: relative;
+}
+
+.input-group button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: .375rem .75rem;
+    z-index: 3;
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 35px;
+    /* border-top-left-radius: 25px;
+    border-top-right-radius: 25px; */
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #000000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.email{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 25px;
+    position: relative;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 10px auto ;
+}
