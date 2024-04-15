@@ -1,5 +1,6 @@
 .navbar-nav .nav-link.active {
     border-bottom: 2px solid #720846;
+    font-weight: bold;
 }
 
 .b {
