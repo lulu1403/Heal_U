@@ -128,6 +128,7 @@ hr{
     display: flex;
     align-items: center;
     color: #720846;
+    font-weight: bold;
 }
 .icon {
     margin-left: 10px;
