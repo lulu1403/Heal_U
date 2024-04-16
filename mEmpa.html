@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edumind</title>
+    <title>EmpaTalk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- link css -->
-    <link rel="stylesheet" href="edu.css">
-    <!-- Icon Bootsrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-
+        <link rel="stylesheet" href="mEmpa.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
 
 <body style="background-color: white;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-lg rounded-bottom-4"
@@ -37,10 +37,10 @@
                     <a class="nav-link" aria-current="page" style="color: #720846;" href="index.html">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  active" style="color: #720846;" href="#">Edumind</a>
+                    <a class="nav-link" style="color: #720846;" href="edu.html">Edumind</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #720846;" href="mEmpa.html">Empatalk</a>
+                    <a class="nav-link active" style="color: #720846;" href="#">Empatalk</a>
                 </li>
                 <li class="nav-item dropdown" style="margin-right: 120px;">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -74,124 +74,111 @@
         </div>
         </div>
     </nav>
+
+    <button class="fixed-button"><i class="bi bi-pencil" style="font-size: 35px; font-weight: bold; color: white;"></i></button>
+
     <section class="jumbotron text-center rounded-5" style="background: linear-gradient(90deg, #720846 0%, #50172D 59.97%);">
         <div class="row justify-content-center fs-5 text-center" style="margin-right: 0;">
             <div class="col-md-3 ">
-                <img src="img-edu/edu.png" alt="Edumind" width="310" class="img-fluid">
+                <img src="img/empatalk/mnbanner.png" alt="gambar_kepala" width="310" class="img-fluid">
             </div>
-            <div class="col-md-8  text-start align-content-center" style="color: white;">
-                <h1><b>EDUMIND</b></h1>
-                <p style="font-size: 16px; text-align:justify;">Disini, kami mengajak Anda untuk memperdalam pemahaman tentang kesehatan
-                    mental. Temukan artikel-artikel informatif tentang berbagai jenis gangguan kesehatan mental, cara
-                    mengenali gejalanya, dan bahkan tips tentang pengelolaan dan perawatan. Bersama-sama, mari kita
-                    jelajahi perjalanan kesehatan mental yang bermakna dan membangun pemahaman yang lebih baik untuk
-                    diri dan orang-orang di sekitar kita!</p>
+            <div class="col-md text-start text-justify align-content-center" style="color: white;">
+                <h1><b>EMPATALK</b></h1>
+                <p style="font-size: 16px; text-align:justify;">EmpaTalk adalah ruang aman di mana Anda dapat berbagi cerita, pengalaman, dan perasaan Anda tentang kesehatan mental secara anonim atau terbuka. Di EmpaTalk, kami menyediakan platform yang mendukung saling mendengarkan, berempati, dan mendukung satu sama lain. Mari bergabung dan temukan kekuatan dalam berbagi, memberi, dan menerima dukungan di komunitas yang peduli dan empatik.</p>
             </div>
         </div>
     </section>
-    <section id="main-edu">
-        <div class="container-fluid pt-5">
-            <div class="row justify-content-center text-start d-flex flex-wrap">
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="background-color: white;">
-                        <img src="img-edu/content/content1.png" class="card-img-top" alt="project1" width="331px">
-                        <div class="card-body rounded-bottom-4 text-center" style="background-color: #720846;">
-                            <p class="card-text" style="font-size: 20px; color: white;">Mengenal Tentang Pentingnya
-                                Kesehatan
-                                Mental</p>
-                        </div>
+    <section id="main-empa">
+        <div class="main-container" style="background-color: white; padding-top:50px;">
+            <div class="empatalk-post">
+                <img class="profile-picture" src="img/profil.png" alt="Profil Picture">
+                <div class="user-info">
+                    <div class="user-name">Nama Pengguna</div>
+                    <div class="post-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <div class="reaction">
+                        <i class="far fa-heart icon"></i>
+                        <span>10</span>
+                        <i class="far fa-comment icon"></i>
+                        <span>5</span>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="background-color: white;">
-                        <img src="img-edu/content/content2.png" class="card-img-top" alt="project1" width="331px">
-                        <div class="card-body rounded-bottom-4 text-center" style="background-color: #720846;">
-                            <p class="card-text" style="font-size: 20px; color: white;">Pentingnya Self-Care dalam
-                                Kesehatan Mental</p>
-                        </div>
+            </div>
+            <div class="empatalk-post">
+                <img class="profile-picture" src="img/profil.png" alt="Profil Picture">
+                <div class="user-info">
+                    <div class="user-name">Nama Pengguna lain</div>
+                    <div class="post-content">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="reaction">
+                        <i class="far fa-heart icon"></i>
+                        <span>10</span>
+                        <i class="far fa-comment icon"></i>
+                        <span>5</span>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="background-color: white;">
-                        <img src="img-edu/content/content3.png" class="card-img-top" alt="project1" width="331px">
-                        <div class="card-body rounded-bottom-4 text-center" style="background-color: #720846;">
-                            <p class="card-text" style="font-size: 20px; color: white;">Teknik Relaksasi Sederhana untuk
-                                Mengatasi Stres</p>
-                        </div>
+            </div>
+            <div class="empatalk-post">
+                <img class="profile-picture" src="img/profil.png" alt="Profil Picture">
+                <div class="user-info">
+                    <div class="user-name">Nama Pengguna lainnya</div>
+                    <div class="post-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat dolores nostrum voluptas et, sapiente possimus magni eos exercitationem eum temporibus.               
+                    </div>
+                    <div class="reaction">
+                        <i class="far fa-heart icon"></i>
+                        <span>10</span>
+                        <i class="far fa-comment icon"></i>
+                        <span>5</span>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="background-color: white;">
-                        <img src="img-edu/content/content4.png" class="card-img-top" alt="project1" width="331px">
-                        <div class="card-body rounded-bottom-4 text-center" style="background-color: #720846;">
-                            <p class="card-text" style="font-size: 20px; color: white;">Pemahaman Emosi: Menyikapi
-                                Perasaan dengan Sehat</p>
-                        </div>
+            </div><div class="empatalk-post">
+                <img class="profile-picture" src="img/profil.png" alt="Profil Picture">
+                <div class="user-info">
+                    <div class="user-name">Nama Pengguna lainnya lagi</div>
+                    <div class="post-content">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                    <div class="reaction">
+                        <i class="far fa-heart icon"></i>
+                        <span>10</span>
+                        <i class="far fa-comment icon"></i>
+                        <span>5</span>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="background-color: white;">
-                        <img src="img-edu/content/content5.png" class="card-img-top" alt="project1" width="331px">
-                        <div class="card-body rounded-bottom-4 text-center" style="background-color: #720846;">
-                            <p class="card-text" style="font-size: 20px; color: white;">Menangani Depresi: Langkah Awal
-                                dan Strategi Pengelolaan</p>
-                        </div>
+            </div><div class="empatalk-post">
+                <img class="profile-picture" src="img/profil.png" alt="Profil Picture">
+                <div class="user-info">
+                    <div class="user-name">Nama Pengguna lain dari yang lain</div>
+                    <div class="post-content">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="background-color: white;">
-                        <img src="img-edu/content/content6.png" class="card-img-top" alt="project1" width="331px">
-                        <div class="card-body rounded-bottom-4 text-center" style="background-color: #720846;">
-                            <p class="card-text" style="font-size: 20px; color: white;">Hubungan antara Pola Makan dan
-                                Kesehatan Mental</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="background-color: white;">
-                        <img src="img-edu/content/content7.png" class="card-img-top" alt="project1" width="331px">
-                        <div class="card-body rounded-bottom-4 text-center" style="background-color: #720846;">
-                            <p class="card-text" style="font-size: 20px; color: white;">Pentingnya Tidur untuk Kesehatan
-                                Mental Optimal</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card" style="background-color: white;">
-                        <img src="img-edu/content/content8.png" class="card-img-top" alt="project1" width="331px">
-                        <div class="card-body rounded-bottom-4 text-center" style="background-color: #720846;">
-                            <p class="card-text" style="font-size: 20px; color: white;">Teknik Manajemen Waktu untuk
-                                Mengurangi Stres</p>
-                        </div>
+                    <div class="reaction">
+                        <i class="far fa-heart icon"></i>
+                        <span>10</span>
+                        <i class="far fa-comment icon"></i>
+                        <span>5</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <footer style="background-color: white; padding-top: 3rem;">
-        <div class="row" style="width: 85%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-    ">
-            <div class="col" style="flex-basis: 25%;
-            padding: 8px;">
-                <img src="img-edu/healu.png" alt="logo" style="width: 200px;
-                margin-bottom: 35px;">
+        <div class="row" style="width: 85%; margin: auto; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between;">
+            <div class="col" style="flex-basis: 25%; padding: 8px;">
+                <img src="img-edu/healu.png" alt="logo" style="width: 200px; margin-bottom: 35px;">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, mollitia.</p>
             </div>
-            <div class="col" style="flex-basis: 25%;
-            padding: 8px;">
+            <div class="col" style="flex-basis: 25%; padding: 8px;">
                 <h3>Office</h3>
                 <p><span>JL.Situ Indah,Cimanggis, Depok</p>
                 <p>Jawa Barat.</p>
                 <p class="email"><i class="fa-solid fa-envelope"></i> heal.u@gmail.com</p>
                 <h5><i class="fa-solid fa-square-phone"></i> +62 123-4567-8901</h5>
             </div>
-            <div class="col" style="flex-basis: 25%;
-            padding: 8px;">
+            <div class="col" style="flex-basis: 25%; padding: 8px;">
                 <h3>Contact US</h3>
                 <div class="social-icons">
                     <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
@@ -199,7 +186,6 @@
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-
         </div>
         <hr>
         <p class="copyright text-center"> Heal.U © 2024 - All Right Reserved</p>
