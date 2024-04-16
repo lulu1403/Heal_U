@@ -35,17 +35,23 @@
 
 .jumbotron{
     padding-top: 100px;
-    padding-bottom: 30px;
-    ;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
-.card {
-    flex-shrink: 0;
-    border-radius: 20px;
-    /* margin-bottom: 8rem;
-    margin-right: 8rem; */
+.fixed-button {
+    position: fixed; /* Menjadikan elemen tetap di posisi tertentu */
+    bottom: 38px; /* Jarak dari bawah layar */
+    right: 0px; /* Jarak dari kanan layar */
+    background-color: #720846; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 5px 20px; /* Padding tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 10px 0px 0px 10px; /* Mengatur sudut lengkung */
+    cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 footer{
     width: 100%;
     bottom: 0;
