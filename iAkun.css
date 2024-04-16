@@ -1,0 +1,146 @@
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #000000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.email{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 25px;
+    position: relative;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 10px auto ;
+}
+
+#info-akun {
+    justify-content: flex-start;
+    padding-top: 70px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.section1 {
+    position: relative;
+    z-index: 1;
+}
+.section2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.container {
+    display: flex;
+    margin-left: 0px;
+    width: 99vw;
+}
+.column-left {
+    flex: 1; 
+    background-color: #720846;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 7px;
+    margin-left: 0px;
+    text-align: center;
+}
+.column-left2 {
+    flex: 1; 
+    background-color: #fff;
+    color: #720846;
+    padding-top: 15px;
+    margin-left: 0px;
+    text-align: center;
+}
+.column-left3 {
+    flex: 1; 
+    background-color: #720846;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 69px;
+    margin-left: 0px;
+    text-align: center;
+    border-radius: 0px 0px 10px 0px;
+}
+.column-right {
+    flex: 3; 
+    background-color: #720846; 
+    color: white; 
+    padding: 20px;
+    margin-left: 70px;
+    border-radius:0px 0px 10px 10px;
+}
+.column-right2 {
+    flex: 3; 
+    background-color: #fff; 
+    color: white; 
+    margin-left: 70px;
+    border-radius:0px 0px 10px 10px;
+}
+.column-right3 {
+    flex: 3; 
+    background-color: #fff; 
+    color: #720846; 
+    padding: 20px;
+    padding-top: 10px;
+    margin-left: 70px;
+    border-radius:0px 0px 10px 10px;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 195px;
+    padding-left: 353px;
+    padding-right: 170px;
+}
+.items .item {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #720846;
+    display: flex; 
+    text-align:center; 
+    align-items: center;
+}
+.aIkon {
+    font-size: 40px; 
+    margin-right: 20px;
+    color: #fff;
+    background-color: #720846;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+}
+.aTeks {
+    margin-top: 10px;
+}
+.edit-akun {
+    display: flex;
+    background-color: #720846;
+    color: #fff;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}

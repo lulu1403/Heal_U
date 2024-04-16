@@ -34,22 +34,22 @@
 }
 
 .jumbotron{
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 50px;
     padding-left: 70px;
     padding-right: 70px;
 }
 
 .fixed-button {
-    position: fixed; /* Menjadikan elemen tetap di posisi tertentu */
-    bottom: 38px; /* Jarak dari bawah layar */
-    right: 0px; /* Jarak dari kanan layar */
-    background-color: #720846; /* Warna latar belakang tombol */
-    color: white; /* Warna teks tombol */
-    padding: 5px 20px; /* Padding tombol */
-    border: none; /* Menghilangkan border */
-    border-radius: 10px 0px 0px 10px; /* Mengatur sudut lengkung */
-    cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+    position: fixed; 
+    bottom: 38px; 
+    right: 0px; 
+    background-color: #720846; 
+    color: white;
+    padding: 5px 20px; 
+    border: none; 
+    border-radius: 10px 0px 0px 10px;
+    cursor: pointer;
     box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);
 }
 footer{
