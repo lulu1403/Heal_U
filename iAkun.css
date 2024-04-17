@@ -32,7 +32,7 @@ hr{
     justify-content: flex-start;
     padding-top: 70px;
     padding-left: 0px;
-    margin-left: 0px;
+    margin-left: 50px;
 }
 .section1 {
     position: relative;
@@ -75,7 +75,6 @@ hr{
     padding-bottom: 69px;
     margin-left: 0px;
     text-align: center;
-    border-radius: 0px 0px 10px 0px;
 }
 .column-right {
     flex: 3; 
@@ -106,8 +105,8 @@ hr{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 195px;
-    padding-left: 353px;
-    padding-right: 170px;
+    padding-left: 410px;
+    padding-right: 114px;
 }
 .items .item {
     flex-basis: calc(33.33% - 20px);
