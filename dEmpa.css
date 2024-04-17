@@ -159,3 +159,85 @@ hr{
 .bi bi-caret-down {
     color: #720846;
 }
+
+.modal-body ,textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #fff;
+    padding: 5px;
+    margin: 0;
+    color: #000000;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.modal-footer{
+    height: 70px;
+    background: #720846;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.modal-footer .col{
+    height: 50px;
+    color: #fff;
+    flex-basis: 30%;
+    padding: 5px;
+}
+.modal-body .btn-close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    background: #720846;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+.switch-container {
+    position: relative;
+    display: inline-block;
+}
+.switch-container input[type="checkbox"] {
+    display: none;
+}
+.switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #aaa; /* Warna latar belakang saat off */
+    transition: .4s;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+}
+.switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked + .switch-slider {
+    background-color: #720846; /* Warna latar belakang saat on */
+}
+input[type="checkbox"]:checked + .switch-slider:before {
+    transform: translateX(15px);
+}
+.switch-label {
+    margin-left: 30px;
+    font-size: 12px;
+}
