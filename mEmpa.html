@@ -75,8 +75,32 @@
         </div>
     </nav>
 
-    <button class="fixed-button"><i class="bi bi-pencil"
-            style="font-size: 35px; font-weight: bold; color: white;"></i></button>
+    <button class="fixed-button" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil" style="font-size: 35px; font-weight: bold; color: white;"></i></button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times</button>
+                    <textarea style="resize: none; width: 425px;" name="Message" rows="8" placeholder="Ayo bercerita!"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <div class="col" style="position: absolute; width: 50px; left: 10px;">
+                        <i class="fa-regular fa-image" style="width: 35px; height: 35px; position: absolute; left: 10px; margin-top: 15px; color: #fff;"></i></div>
+                    <div class="col">
+                        <div class="form-check form-switch switch-container" style="position: absolute; left: 80px; margin-top: 10px;" >
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="switch-slider" for="flexSwitchCheckDefault"></label>  
+                        </div>
+                            <label class="form-check-label" for="flexSwitchCheckDefault" style="position: absolute; left: 130px; margin-top: 15px; font-size: 10px;">Tampilkan postingan secara anonim</label>
+                    </div>
+                    <div class="col">
+                        <p style="text-align: center; position: absolute; right: 30px; margin-top: 11px; font-weight:bold; text-shadow: -4px 4px 6px rgba(0, 0, 0, 0.1);">posting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="jumbotron text-center rounded-5"
         style="background: linear-gradient(90deg, #720846 0%, #50172D 59.97%);">
@@ -100,7 +124,7 @@
                 <img class="profile-picture" src="img/profil.png" alt="Profil Picture">
                 <div class="user-info">
                     <div class="user-name">Nama Pengguna</div>
-                    <div class="post-content">
+                    <div class="post-content" onclick="window.location.href='dEmpa.html';" style="cursor: pointer;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
                     </div>
